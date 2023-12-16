@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="BACHAR ALHAMADA ">
-    <link rel="shortcut icon" href="assets/favicon.png?v=2" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/img/logo.webp" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap">
     <link rel="stylesheet" href="./assets/style/reset.css">
@@ -15,22 +15,50 @@
     <title>LINKON </title>
   </head>
   <body>
-    <header>
-        <h1>Network Name</h1>
+    <header class="header">
+        <div class="logo-container">
+            <img src="linkon-logo.png" alt="LINKON Logo" class="logo" /> <!-- Replace with your logo image -->
+        </div>
+        <div class="search-container">
+            <input type="search" placeholder="Search" />
+        </div>
+        <nav class="navigation">
+            <a href="#" class="nav-link">Home</a>
+            <a href="#" class="nav-link">My Network</a>
+            <a href="#" class="nav-link">Jobs</a>
+            <a href="#" class="nav-link">Messaging</a>
+            <a href="#" class="nav-link">Notifications</a>
+            <div class="profile-icon">
+                <img src="profile-pic.jpg" alt="Profile" class="profile-pic" /> <!-- Replace with your profile image -->
+            </div>
+        </nav>
     </header>
-    <main>
-        <section class="profile-column">
-            <!-- Main user profile will go here -->
+    
+    <main class="main-content">
+        <aside class="profile-sidebar">
+            <img src="profile-pic.jpg" alt="Profile" class="profile-pic-large" /> <!-- Replace with your profile image -->
+            <h2 class="profile-name">Bachar Alhamada</h2>
+            <p class="profile-role">AI Enthusiast, Developer</p>
+            <button class="btn">Follow</button>
+            <button class="btn">Connect</button>
+            <div class="profile-links">
+                <a href="#" class="profile-link"><i class="fas fa-users"></i> Followers</a>
+                <a href="#" class="profile-link"><i class="fas fa-globe"></i> My Website</a>
+            </div>
+        </aside>
+        
+        <section class="feed">
+            <!-- Feed content will be dynamically generated here -->
         </section>
-        <section class="feed-column">
-            <!-- Feed will go here -->
-        </section>
+        
         <aside class="suggestions-column">
             <!-- Suggestions will go here -->
         </aside>
     </main>
-    <footer>
-        <p>&copy; 2023 Network Name. All rights reserved.</p>
+    
+    <footer class="footer">
+        <p>&copy; 2023 LINKON Network</p>
     </footer>
+        
   </body>
 </html>
