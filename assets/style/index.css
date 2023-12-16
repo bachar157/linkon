@@ -1,0 +1,139 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+  }
+  
+  .container {
+    display: flex;
+    height: 100vh;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5); /* Shadow effect */
+  }
+  
+  .left-panel {
+    background: url('../img/backgroundloginpic.webp') no-repeat center center fixed;
+    background-size: cover;
+    width: 40%;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  
+  .company-name {
+    color: rgb(11, 14, 141);
+    font-weight: bold;
+    font-size: 3em;
+    position: absolute;
+    top: 7;
+    left: 0;
+    padding: 40px;
+  }
+  .custom-design{
+    background-color: rgb(24, 126, 185);
+    color: white;
+    border-radius: 5px;
+    margin-left: 4px;
+    padding: 0 5px;
+  }
+  .right-panel {
+    background-color: hsl(0, 0%, 100%); /* Light blue background */
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 15%; /* Add padding to the right panel */
+    box-sizing: border-box;
+    justify-content: center; /* Center the content vertically */
+    position: relative; /* Needed to position the footer at the bottom */
+    height: 100vh;
+ }
+  
+  .welcome-container {
+    width: 100%;
+    max-width: 400px;
+  }
+  .error-message-container{
+    display: flex;
+    ;  }
+  #error-message {
+    color: red;
+    flex: 2;
+    width: 70%;
+    margin-left: 10px;
+
+
+}
+  .welcome-container h1 {
+    font-size: 3em;
+    color: #0a66c2; /* LinkedIn blue for the Welcome text */
+    margin-bottom: 0.5em;
+  }
+  
+  .input-group {
+    margin-bottom: 15px;
+  }
+  
+  .input-group input {
+    width: 120%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f5f7f8; /* White background for input */
+  }
+  
+  .forgot-password {
+    display: block;
+    text-align: left;
+    color: #0a66c2;
+    margin-bottom: 10px;
+    text-decoration: none;
+    flex: 1;  }
+  
+  .buttons {
+    display: flex;
+    justify-content: space-between; /* This will add space between the two buttons */
+    margin-top: 20px; /* Adds margin above the button group */
+    width: 120%;
+  }
+  
+  .login-btn, .signup-btn {
+    flex: 1; /* Each button will take up an equal amount of space */
+    padding: 10px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid transparent; /* Add or remove borders as desired */
+  }
+  
+  .login-btn {
+    background-color: #0a66c2;
+    color: white;
+    margin-right: 10px; /* Adds margin to the left and right of each button */
+
+  }
+  
+  .signup-btn {
+    background-color: white;
+    color: #0a66c2;
+    border-color: #0a66c2; /* Gives the sign-up button a blue border */
+    margin-left: 10px; /* Adds margin to the left and right of each button */
+
+  }
+  
+  footer {
+    position: absolute; /* Position the footer absolutely within the right-panel */
+    bottom: 0; /* Align the footer to the bottom */
+    left: 0;
+    width: 100%; /* Span the full width of the right-panel */
+    text-align: center;
+    padding: 20px 50px; /
+  }
+  
+  footer p {
+    color: #666;
+  font-size: 0.75em;
+  }
+  

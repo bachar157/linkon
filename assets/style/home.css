@@ -1,0 +1,40 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header, footer {
+    background-color: #f3f3f3;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.profile-column, .feed-column, .suggestions-column {
+    width: 32%;
+    padding: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    background-color: white;
+    border-radius: 4px;
+}
+
+footer p {
+    color: #666;
+}
+
+/* Responsive design is optional, but here's a simple media query as an example */
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+    }
+    .profile-column, .feed-column, .suggestions-column {
+        width: auto;
+    }
+}
