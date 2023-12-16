@@ -28,6 +28,4 @@ To try out the platform, use the following login credentials:
 [![CSS Badge](https://img.shields.io/badge/-CSS-1572B6?style=for-the-badge&labelColor=black&logo=css3&logoColor=1572B6)](#)
 [![JavaScript Badge](https://img.shields.io/badge/-JavaScript-F7DF1E?style=for-the-badge&labelColor=black&logo=javascript&logoColor=F7DF1E)](#)
 
-## Setup and Installation
 
-1. Clone the repository:
