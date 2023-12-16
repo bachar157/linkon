@@ -18,9 +18,8 @@ To try out the platform, use the following login credentials:
 
 - User authentication with local storage.
 - Dynamic profile sidebar with user information.
-- Feed section that allows posting and displays a feed of posts.
 - Suggestions column that shows potential connections.
-- Responsive design for various screen sizes.
+
 
 ## Technologies Used
 
