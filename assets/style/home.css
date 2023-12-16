@@ -8,7 +8,6 @@ body {
 .container {
     display: flex;
     max-width: 1200px;
-    margin: 0 25px;
     gap: 25px;
     padding: 0 15px; /* Add padding to align content inside the container */
 
@@ -17,21 +16,21 @@ body {
 .header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 10px 0;
+    justify-content: center;
+    padding: 10px 25px;
     background-color: #ffffff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    width: 100%;
+   
 }
 
-.logo-container {
-    margin-right: 30px;
-}
+
 
 .company-name {
     color: rgb(11, 14, 141);
     font-weight: bold;
     font-size: 2em;
+    margin-right: 30px;
+
    
   }
   .custom-design{
@@ -44,7 +43,7 @@ body {
 
 .search-container {
     position: relative;
-    margin-right: 20px;
+    margin-right: 70px;
 }
 .search-container i {
     position: absolute;
@@ -244,8 +243,8 @@ body {
 }
 
 .occupation, .post-time {
-    font-size: 0.9em;
-    color: #4d4b4b;
+    font-size: 0.8em;
+    color: #666;
 }
 
 .post-time {
