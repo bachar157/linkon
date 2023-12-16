@@ -7,7 +7,7 @@ function createUserCard(user) {
     userCard.className = 'user-card';
 
     const profileImage = document.createElement('img');
-    profileImage.src = user.picture.medium; // The src will be the URL from the API data
+    profileImage.src = user.picture.medium; 
     profileImage.alt = `${user.name.first} ${user.name.last}`;
     profileImage.className = 'profile-pic';
 
@@ -17,11 +17,11 @@ function createUserCard(user) {
 
     const userCity = document.createElement('div');
     userCity.className = 'user-city';
-    userCity.textContent = user.location.city; // The city text
+    userCity.textContent = user.location.city;
 
     const userOccupation = document.createElement('div');
     userOccupation.className = 'user-occupation';
-    userOccupation.textContent = user.occupation; // The occupation text
+    userOccupation.textContent = user.occupation; 
 
     const addFriendIcon = document.createElement('i');
     addFriendIcon.className = 'fas fa-user-plus add-friend';
@@ -30,19 +30,19 @@ function createUserCard(user) {
     // Append elements to the user card in the right order
     userCard.appendChild(profileImage);
     userCard.appendChild(userName);
-    userCard.appendChild(userCity); // Append the city element right after the user name
+    userCard.appendChild(userCity); 
     userCard.appendChild(userOccupation);
-    userCard.appendChild(addFriendIcon); // Append the add friend icon
+    userCard.appendChild(addFriendIcon); 
 
     return userCard;
 }
 
 // Example of using fetched API data
-fetch('https://randomuser.me/api/?results=11') // Fetches 3 random users
+fetch('https://randomuser.me/api/?results=11') 
     .then(response => response.json())
     .then(data => {
         data.results.forEach(user => {
-            // Assuming the API returns an object with 'name', 'picture', and 'occupation' properties
+           
             const userCard = createUserCard(user);
             suggestionsContainer.appendChild(userCard);
         });

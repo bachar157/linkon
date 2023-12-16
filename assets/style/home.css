@@ -9,7 +9,7 @@ body {
     display: flex;
     max-width: 1200px;
     gap: 25px;
-    padding: 0 15px; /* Add padding to align content inside the container */
+    padding: 0 15px; 
 
 }
 
@@ -53,9 +53,9 @@ body {
     color: #888;
 }
     .search-container input[type="search"] {
-        padding: 8px 30px 8px 10px; /* Space for search icon */
+        padding: 8px 30px 8px 10px; 
         border: 1px solid #ddd;
-        border-radius: 20px; /* Rounded borders */
+        border-radius: 20px;
     }
 .navigation {
     display: flex;
@@ -91,7 +91,7 @@ body {
     padding: 0 70px;
 }
 
-.profile-sidebar, .feed, .connections-sidebar {
+ .feed, .connections-sidebar {
     background-color: #fff;
     padding: 15px;
     border-radius: 8px;
@@ -99,38 +99,114 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.profile-pic-large {
-    width: 100px;
-    height: auto;
-    border-radius: 50px;
-    margin-bottom: 10px;
-}
+
+
 .profile-sidebar {
-    width: 25%;
-    margin-right: 10px; /* Adjust space between columns */
+    background-color: #ffffff;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    height: 555px;
 }
+
+.profile-pic-large {
+    width: 120px; 
+    height: 120px; 
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+}
+
 .profile-name {
-    font-weight: bold;
-    margin-bottom: 5px;
+    font-size: 1.5em; 
+    margin-top: 10px;
 }
 
 .profile-role {
+    color: #666;
+    font-size: 1em;
+}
+
+.profile-location {
+    font-size: 0.85em;
+    color: #888;
     margin-bottom: 20px;
 }
+.profile-actions {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+.profile-actions .btn {
+    display: block; 
+    margin: 10px auto;
+    padding: 10px 20px;
+    width: 90%; 
+    border-radius: 20px;
+    border: 1px solid #0077b5; 
+    cursor: pointer;
+}
+
+.follow-btn {
+    background-color: #005fa3;
+    color: white;
+
+}
+.follow-btn:hover {
+    background-color: #0a5286;
+}
+.connect-btn{
+    color: #0077b5;
+    background-color: #ffffff; 
+}
+.connect-btn:hover {
+    background-color: #f3f2f2;
+}
+.profile-stats {
+    font-size: 0.85em;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc; 
+    padding-bottom: 20px;
+}
+.profile-stat:first-child {
+    border-right: 1px solid #ccc;
+}
+
+.profile-stat:last-child {
+    border-right: none;
+}
+.profile-stat {
+    text-align: center;
+    width: 50%;
+    position: relative;
+}
+.profile-links .profile-link {
+    display: block;
+    color: #0077b5;
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.profile-links .profile-link i {
+    margin-right: 5px;
+}
+
 
 .btn {
     padding: 10px 20px;
     margin-right: 10px;
-    background-color: #0077b5;
-    color: white;
     border: none;
     border-radius: 20px;
     cursor: pointer;
 }
 
-.btn:hover {
-    background-color: #005fa3;
-}
+
 
 .profile-links a {
     display: block;
@@ -209,7 +285,7 @@ body {
 }
 .feed {
     margin: 0 auto;
-    max-width: 600px; /* Adjust the width as needed */
+    max-width: 600px; 
 }
 
 .post {
@@ -248,7 +324,7 @@ body {
 }
 
 .post-time {
-    display: block; /* or inline-block, depending on your layout */
+    display: block; 
 }
 
 .post-content {
@@ -279,9 +355,9 @@ body {
     background-color: #fff;
     padding: 15px;
     border-radius: 8px;
-    margin-left: 10px; /* Adjust space between columns */
+    margin-left: 10px; 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    height: fit-content; /* Adjust height based on content */
+    height: fit-content; 
 }
 .user-card {
     display: flex;
@@ -302,10 +378,10 @@ body {
 }
 
 .user-card .user-name {
-    font-size: 1.2rem; /* Size of the user's name */
+    font-size: 1.2rem;
     font-weight: bold;
-    color: #333; /* Color for the user's name */
-    margin-bottom: 2px; /* Space between name and city */
+    color: #333;
+    margin-bottom: 2px;
 }
 
 .user-card .user-occupation {
@@ -314,8 +390,8 @@ body {
 } 
 
 .user-card .user-city {
-    font-size: 0.85rem; /* Smaller font size for the city */
-    color: #555; /* Slightly lighter color for the city */
+    font-size: 0.85rem; 
+    color: #555; 
     position: absolute;
     left: 80px;
     top:45px
