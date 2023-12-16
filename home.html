@@ -10,55 +10,94 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap">
     <link rel="stylesheet" href="./assets/style/reset.css">
     <link rel="stylesheet" href="./assets/style/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script defer src="./assets/script/home.js" type="module"></script>
     <title>LINKON </title>
   </head>
   <body>
     <header class="header">
-        <div class="logo-container">
-            <img src="linkon-logo.png" alt="LINKON Logo" class="logo" /> <!-- Replace with your logo image -->
-        </div>
-        <div class="search-container">
-            <input type="search" placeholder="Search" />
-        </div>
-        <nav class="navigation">
-            <a href="#" class="nav-link">Home</a>
-            <a href="#" class="nav-link">My Network</a>
-            <a href="#" class="nav-link">Jobs</a>
-            <a href="#" class="nav-link">Messaging</a>
-            <a href="#" class="nav-link">Notifications</a>
-            <div class="profile-icon">
-                <img src="profile-pic.jpg" alt="Profile" class="profile-pic" /> <!-- Replace with your profile image -->
+        <div class="container">
+            <div class="logo-container">
+                <img src="./assets/img/logo.webp" alt="LINKON Logo" class="logo" />
             </div>
-        </nav>
+            <div class="search-container">
+                <input type="search" placeholder="Search" />
+            </div>
+            <nav class="navigation">
+                <a href="#" class="nav-link">Home</a>
+                <a href="#" class="nav-link">My Network</a>
+                <a href="#" class="nav-link">Jobs</a>
+                <a href="#" class="nav-link">Messaging</a>
+                <a href="#" class="nav-link">Notifications</a>
+                <div class="profile-icon">
+                    <img src="./assets/img/71847632.jpg" alt="Profile" class="profile-pic" />
+                </div>
+            </nav>
+        </div>
     </header>
     
     <main class="main-content">
-        <aside class="profile-sidebar">
-            <img src="profile-pic.jpg" alt="Profile" class="profile-pic-large" /> <!-- Replace with your profile image -->
-            <h2 class="profile-name">Bachar Alhamada</h2>
-            <p class="profile-role">AI Enthusiast, Developer</p>
-            <button class="btn">Follow</button>
-            <button class="btn">Connect</button>
-            <div class="profile-links">
-                <a href="#" class="profile-link"><i class="fas fa-users"></i> Followers</a>
-                <a href="#" class="profile-link"><i class="fas fa-globe"></i> My Website</a>
-            </div>
-        </aside>
-        
-        <section class="feed">
-            <!-- Feed content will be dynamically generated here -->
-        </section>
-        
-        <aside class="suggestions-column">
-            <!-- Suggestions will go here -->
-        </aside>
+        <div class="container">
+            <aside class="profile-sidebar">
+                <img src="./assets/img/71847632.jpg" alt="Profile" class="profile-pic-large" />
+                <h2 class="profile-name">Bachar Alhamada</h2>
+                <p class="profile-role">AI Enthusiast, Developer</p>
+                <button class="btn">Follow</button>
+                <button class="btn">Connect</button>
+                <div class="profile-links">
+                    <a href="#" class="profile-link"><i class="fas fa-users"></i> Followers</a>
+                    <a href="#" class="profile-link"><i class="fas fa-globe"></i> My Website</a>
+                </div>
+            </aside>
+            
+            <section class="feed">
+                <div class="post">
+                    <div class="post-header">
+                        <img src="./assets/img/71847632.jpg" alt="Profile Picture" class="profile-pic" />
+                        <div class="user-info">
+                            <h3>Bachar alahmada </h3>
+                            <p class="occupation">Software Developer</p>
+                            <span class="post-time">55m ago</span>
+                        </div>
+                    </div>
+                    <p class="post-content">In the dynamic world of software development, staying relevant and adaptable is key.</p>
+                    <img src="./assets/img/loginbackground.webp" alt="Post Image" class="post-image" />
+                    <div class="post-actions">
+                        <i class="far fa-heart"> Like</i>
+                        <i class="far fa-comment"> Comment</i>
+                        <i class="far fa-share-square"> Share</i>
+                    </div>
+                </div>
+                <div class="post">
+                    <div class="post-header">
+                        <img src="./assets/img/71847632.jpg" alt="Profile Picture" class="profile-pic" />
+                        <div class="user-info">
+                            <h3>Bachar alahmada </h3>
+                            <p class="occupation">Software Developer</p>
+                            <span class="post-time">55m ago</span>
+                        </div>
+                    </div>
+                    <p class="post-content">In the dynamic world of software development, staying relevant and adaptable is key.</p>
+                    <img src="./assets/img/loginbackground.webp" alt="Post Image" class="post-image" />
+                    <div class="post-actions">
+                        <i class="far fa-heart"> Like</i>
+                        <i class="far fa-comment"> Comment</i>
+                        <i class="far fa-share-square"> Share</i>
+                    </div>
+                </div>
+            </section>
+            
+            <aside class="suggestions-column">
+                <!-- Suggestions will be dynamically generated here -->
+            </aside>
+        </div>
     </main>
     
     <footer class="footer">
-        <p>&copy; 2023 LINKON Network</p>
-    </footer>
-        
-  </body>
+        <div class="container">
+            <p>&copy; 2023 LINKON Network</p>
+        </div>
+    </footer>        
+    </body>
 </html>

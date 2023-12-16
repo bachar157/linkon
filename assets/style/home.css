@@ -5,6 +5,13 @@ body {
     background-color: #f4f4f4;
 }
 
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 25px;
+    gap: 25px;
+}
+
 .header {
     display: flex;
     align-items: center;
@@ -18,7 +25,7 @@ body {
 }
 
 .logo {
-    height: 40px; /* Adjust as needed */
+    height: 40px;
 }
 
 .search-container {
@@ -43,7 +50,7 @@ body {
 }
 
 .profile-icon {
-    margin-left: auto; /* Push to the right */
+    margin-left: auto;
 }
 
 .profile-pic {
@@ -56,23 +63,27 @@ body {
     display: flex;
     justify-content: space-around;
     margin: 20px;
+    padding: 0 70px;
 }
 
 .profile-sidebar, .feed, .connections-sidebar {
     background-color: #fff;
     padding: 15px;
     border-radius: 8px;
-    margin: 10px;
+    margin: 0 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .profile-pic-large {
     width: 100px;
-    height: 100px;
+    height: auto;
     border-radius: 50px;
     margin-bottom: 10px;
 }
-
+.profile-sidebar {
+    width: 25%;
+    margin-right: 10px; /* Adjust space between columns */
+}
 .profile-name {
     font-weight: bold;
     margin-bottom: 5px;
@@ -111,4 +122,182 @@ body {
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+/* Feed and Post Styles */
+.feed {
+    width: 50%;
+    margin-right: 10px; 
+}
+
+.post {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.post h3 {
+    margin-top: 0;
+}
+
+.post img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.profile-thumbnail {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-info h3 {
+    margin: 0;
+}
+.user-info {
+    flex-grow: 1;
+}
+.user-info p {
+    font-size: 0.8em;
+    color: #666;
+}
+
+.post-content {
+    margin-bottom: 10px;
+}
+
+.post-actions button {
+    padding: 5px 10px;
+    margin-right: 5px;
+}
+.feed {
+    margin: 0 auto;
+    max-width: 600px; /* Adjust the width as needed */
+}
+
+.post {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-info {
+    flex-grow: 1;
+}
+
+.user-info h3 {
+    margin: 0;
+}
+
+.occupation, .post-time {
+    font-size: 0.8em;
+    color: #666;
+}
+
+.post-time {
+    display: block; /* or inline-block, depending on your layout */
+}
+
+.post-content {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.post-image {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.post-actions {
+    font-size: 1.2em;
+}
+
+.post-actions i {
+    margin-right: 10px;
+    cursor: pointer;
+}
+.suggestions-column {
+    width: 25%;
+}
+.suggestions-column {
+    width: 25%;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    margin-left: 10px; /* Adjust space between columns */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: fit-content; /* Adjust height based on content */
+}
+.user-card {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.user-card img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.user-card .user-name {
+    font-size: 1.2rem; /* Size of the user's name */
+    font-weight: bold;
+    color: #333; /* Color for the user's name */
+    margin-bottom: 2px; /* Space between name and city */
+}
+
+.user-card .user-occupation {
+    font-size: 0.85rem;
+    color: #666;
+} 
+
+.user-card .user-city {
+    font-size: 0.85rem; /* Smaller font size for the city */
+    color: #555; /* Slightly lighter color for the city */
+    position: absolute;
+    left: 80px;
+    top:45px
+}
+
+.user-card .add-friend {
+    margin-left: auto;
+    cursor: pointer;
+    color: #0077b5;
 }
