@@ -38,7 +38,7 @@ function createUserCard(user) {
 }
 
 // Example of using fetched API data
-fetch('https://randomuser.me/api/?results=15') 
+fetch('https://randomuser.me/api/?results=16') 
     .then(response => response.json())
     .then(data => {
         data.results.forEach(user => {

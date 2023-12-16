@@ -39,7 +39,7 @@ body, html {
     padding: 0 5px;
   }
   .right-panel {
-    background-color: hsl(0, 0%, 100%); /* Light blue background */
+    background-image: linear-gradient(to left, rgba(248, 248, 248, 0.8), rgba(199, 199, 199, 0)); /* Light yellow gradient */
     width: 70%;
     display: flex;
     flex-direction: column;
