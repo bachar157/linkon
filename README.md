@@ -2,5 +2,5 @@
 
 ## log in info
 
-username: bachar 
+username: bachar /
 password: bachar 
