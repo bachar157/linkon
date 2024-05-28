@@ -28,3 +28,4 @@ To try out the platform, use the following login credentials:
 [![JavaScript Badge](https://img.shields.io/badge/-JavaScript-F7DF1E?style=for-the-badge&labelColor=black&logo=javascript&logoColor=F7DF1E)](#)
 
 
+# note-app
